@@ -1,8 +1,14 @@
+package esVideo09_Grafica;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.colorchooser.DefaultColorSelectionModel;
 
+/**Classe che crea una finestra con un bottone che cambia colore al passaggio del mouse
+ * 
+ * @author Luca Finizio
+ *
+ */
 public class FinestraConBottoneWB {
 	Container contenuto = null;
 	
@@ -27,28 +33,23 @@ public class FinestraConBottoneWB {
 			//Cambio colore del bottone quando il cursore esce
 			@Override
 			public void mouseExited(MouseEvent arg1) {
-				((JButton)arg1.getSource()).setBackground(Color.white);
+				((JButton)arg1.getSource()).setBackground(null);
 			}
 		});
 		
 		contenuto.add(b1);
 		b1.addActionListener(new ClicBottone());
 		
-		JTextField cognome = new JTextField();
-		//cognome.addKeyListener(new intercettaTasti());
-		
-		cognome.addKeyListener(new KeyAdapter()
-		{
-			public void keyReleased(KeyEvent e)
-			{
-				
-			}
-		});
-	
-		
 		finestra.setVisible(true);
 		finestra.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
+	
+	
+	/**Classe che crea una finestra quando si clicca il JButton
+	 * 
+	 * @author Luca Finizio
+	 *
+	 */
 	private class ClicBottone implements ActionListener
 	{
 		public void actionPerformed(ActionEvent evento)
@@ -58,4 +59,3 @@ public class FinestraConBottoneWB {
 		}
 	}
 }
-
