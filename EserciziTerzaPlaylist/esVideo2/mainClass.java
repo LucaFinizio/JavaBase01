@@ -1,15 +1,21 @@
-/* L'esercizio chiede di provare a cambiare il colore dello sfondo della finestra
- * (il problema è stato nel fatto nel fatto che per poter attivare setBackground 
- *  bisogna prima chiamare getContentPane() )
- */
+package esVideo02_Grafica;
 
 import java.awt.Color;
 import javax.swing.*;
 
 
+/**Esercizio playlist 3, video 2, minuto 8:12
+ * L'esercizio chiede di provare a cambiare il colore dello sfondo del JFrame (il problema è stato nel fatto nel 
+ * fatto che per poter attivare setBackground bisogna prima chiamare getContentPane).
+ * 
+ * @author Luca Finizio
+ *
+ */
 public class mainClass {
 	
-	//Metodo per mettere in pausa il programma di un tot di secondi
+	/**Metodo che mette il programma in pausa per un certo numero di secondi che scegliamo noi
+	 * @param secondi numeri di secondi in cui il programma rimane in pausa
+	 */
 	static void pausa(int secondi)
 	{
 		try 
