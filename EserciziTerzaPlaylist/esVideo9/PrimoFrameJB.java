@@ -1,3 +1,5 @@
+package esVideo09_Grafica;
+
 /*Creato con New->Other->WindowBuilder->JFrame
  * 
  */
@@ -8,13 +10,17 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+/**Classe che crea una nuova finestra, con controllo try...catch
+ * NOTA: questa classe è stata creata tramite il WB: New->Other->WindowBuilder->JFrame
+ * 
+ * @author Luca Finizio
+ *
+ */
 public class PrimoFrameJB extends JFrame {
 
 	private JPanel contentPane;
 
-	/**
-	 * Launch the application.
-	 */
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -29,7 +35,7 @@ public class PrimoFrameJB extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	 * Costruttore che crea il frame
 	 */
 	public PrimoFrameJB() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
