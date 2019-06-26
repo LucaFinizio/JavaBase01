@@ -1,4 +1,11 @@
 
+/**Esercizio playlist 1, video 30, minuto 3:32
+ * L'esercizio chiede di calcolare la somma dei numeri compresi tra A e B tramite un ciclo for (possiamo fare a
+ * meno di far leggere A e B da tastiera)
+ * 
+ * @author Luca Finizio
+ *
+ */
 public class esVideo30 {
 
 	public static void main(String[] args) {
