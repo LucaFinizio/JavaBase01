@@ -1,4 +1,14 @@
 import java.util.Scanner;
+
+/** Esercizio playlist 1, video 26, minuto 9:20
+ *  L'esercizio chiede di:
+ *       1) creare un ciclo per calcolare e stampare la somma dei primi cento numeri
+ *       2) somma dei numeri compresi tra A e B (con A e B letti da tastiera)
+ *       3) far inserire numeri da tastiera e sommarli fintanto che la somma rimane inferiore a 1000
+ *       
+ * @author Luca Finizio
+ *
+ */
 public class esVideo26 {
 
 	public static void main(String[] args) {
