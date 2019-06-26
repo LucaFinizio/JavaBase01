@@ -1,19 +1,22 @@
 import java.io.*;
 
+/**Esercizio playlist 1, video 44, minuto 8:45
+ * L'esercizio chiede di provare a ricordare qual è la direttiva di import da aggiungere  per leggere da tastiera e
+ * quali sono le due classi (e quindi gli oggetti da creare) per poter leggere dalla tastiera.
+ * 
+ * @author Luca Finizio
+ *
+ */
 public class esVideo44 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*Dati input
-		 * somma iniziale
-		 * percentuale di interesse annuale
-		 * numero di anni deposito
-		 */
 		double sommaIniziale=0;
 		double sommaFinale=0;
 		double percentualeInteresse=0;
 		int anniDeposito=0;
 		
+		//Classi usate per leggere da tastiera
 		InputStreamReader tastiera = new InputStreamReader(System.in);
 		BufferedReader bufferTastiera = new BufferedReader(tastiera);
 		
@@ -42,7 +45,7 @@ public class esVideo44 {
 				e.printStackTrace();
 				errore = true; //Si attiva quando c'è un problema con il dispositivo di input
 			}
-		}while(errore);
+		}while(errore); //Ripeto la lettura finchè non ottengo un valore valido
 		
 	}
 

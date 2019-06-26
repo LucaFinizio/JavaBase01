@@ -1,9 +1,17 @@
-
+/**Esercizio playlist 1, video 33, minuto 8:00
+ * L'esercizio chiede di creare un metodo che stampa una fila di simboli (per creare una "ornicetta"). 
+ * Fare in modo di poter scegliere sia il tipo di simbolo da stampare sia quanti stamparne
+ * 
+ * @author Luca Finizio
+ *
+ */
 public class esVideo33 {
 
-	/*Metodo per stampare a video un messaggio con la cornicetta.
-	  Il simbolo da usare nella cornicetta può essere modificato;
-	  possiamo inoltre scegliere quante volte stampare il simbolo della cornicetta*/
+	/**Metodo che stampa il messaggio (preso in input) e richiama i metodi per stampare la cornice
+	 * @param ilMessaggio il messaggio da stampare a video
+	 * @param simbolo il simbolo che voglio usare per la cornicetta
+	 * @param lunghezza mi dice quante volte stampare il simbolo che uso per la cornicetta
+	 */
 	static void messaggio(String ilMessaggio, char simbolo, int lunghezza)
 	{
 		stampaCornice(simbolo, lunghezza);
@@ -12,7 +20,10 @@ public class esVideo33 {
 	}
 	
 	
-	//Metodo per stampare il simbolo della cornicetta un certo numero di volte scelto dall'utente
+	/**Metodo che creare la cornicetta, stampando il simbolo scelto per i volte
+	 * @param simbolo1 simbolo scelto per la cornice
+	 * @param lunghezza1 numero di volte che bisogna stampare il simbolo scelto per la cornice
+	 */
 	static void stampaCornice(char simbolo1, int lunghezza1)
 	{
 		for (int i=0; i<=lunghezza1; i++) System.out.print(simbolo1);
